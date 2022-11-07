@@ -1,0 +1,51 @@
+@import "../../styles/colors";
+
+.container {
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  top: 100px;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    .container {
+      margin-left: 0;
+    }
+  }
+
+  .header {
+    position: relative;
+    max-width: 100px;
+    margin: 40px auto;
+    padding-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: "Poppins", sans-serif;
+    border-bottom: $secondaryBackgroundColor 5px solid;
+  }
+
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    transition: duration 3s ease;
+    animation: skillsGridAnimation 3s ease;
+    animation-fill-mode: backwards;
+    margin: 0 auto;
+  }
+
+  @keyframes skillsGridAnimation {
+    0% {
+      opacity: 0;
+      padding: 500px 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../styles/colors.scss";
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: $secondaryBackgroundColor;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2; //setting to 2 ensures the menu will appear under topbar which has z-index of 3
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0; //menu only appears when hamburger is clicked
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    width: 60%;
+  }
+}

@@ -1,0 +1,112 @@
+@import "../../styles/colors";
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  color: white;
+  position: fixed;
+  top: 0;
+  transition: all 1s ease; //delays color transition for active class
+  overflow: hidden;
+  box-shadow: #000000 0px 0px 10px 0px;
+  z-index: 3;
+  background-color: $mainBackgroundColor;
+  .wrapper {
+    padding: 10px 30px; //| top/bottom: 10 | left/right: 30|
+    display: flex;
+    align-items: center;
+    justify-content: space-between; //spaces left/right elements
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit; //logo inherits $mainColor from parent class (.topbar)
+        margin-right: 40px;
+      }
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: -500px;
+        animation: easeItemsIn 3s;
+        animation-fill-mode: forwards;
+
+        .icon {
+          font-size: 18px;
+          margin-right: 5px;
+          font-weight: bold;
+        }
+        span {
+          font-size: 15px;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+        }
+        @keyframes easeItemsIn {
+          100% {
+            //after 2.5s arrows opacity reaches 0 which creates blinking effect
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .right {
+      overflow: hidden;
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+        margin-right: -100px;
+        animation: easeHamburgerIn 3s;
+        animation-fill-mode: forwards;
+
+        @keyframes easeHamburgerIn {
+          100% {
+            //after 2.5s arrows opacity reaches 0 which creates blinking effect
+            margin-right: 20px;
+          }
+        }
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: $mainColor;
+          transform-origin: left; //makes lines transform towards left
+          transition: all 2s ease; //delays transformation to 2s to complete
+        }
+      }
+    }
+    //if it's active reverse main color and text color of navbar
+  }
+  &.active {
+    background-color: $secondaryBackgroundColor;
+    color: white;
+
+    .hamburger {
+      span {
+        //make first + last line white
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg); //rotate first line 45deg
+        }
+        &:nth-child(2) {
+          //second line disappears
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(
+            -45deg
+          ); //rotate 3rd line 45deg opposite line 1 - creates x
+        }
+      }
+    }
+  }
+}

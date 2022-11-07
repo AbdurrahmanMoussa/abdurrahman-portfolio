@@ -1,0 +1,87 @@
+@import "../../styles/colors";
+
+.intro {
+  display: flex;
+  height: calc(100vh - 70px);
+
+  .inner {
+    flex: 1;
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .wrapper {
+        margin-left: 50px;
+
+        h1 {
+          font-size: 60px;
+          margin: 10px 0;
+          color: $mainColor;
+        }
+        h2 {
+          color: $mainColor;
+          font-size: 35px;
+        }
+        h3 {
+          font-size: 30px;
+          opacity: 0.6;
+
+          color: $mainColor;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 10px 0;
+          color: $mainColor;
+          opacity: 0.7;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-decoration: none;
+  color: $secondaryTextColor;
+  font-weight: bold;
+  background-color: $mainColor;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  width: 40%;
+
+  &:hover {
+    background-color: $secondaryBackgroundColor;
+    color: white;
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 150px;
+  left: 70%;
+
+  img {
+    width: 50px;
+    animation: arrowBlink 3s infinite;
+    background-color: rgb(190, 195, 238);
+    border-radius: 50%;
+  }
+
+  @keyframes arrowBlink {
+    100% {
+      //after 2.5s arrows opacity reaches 0 which creates blinking effect
+      opacity: 0;
+    }
+  }
+}
