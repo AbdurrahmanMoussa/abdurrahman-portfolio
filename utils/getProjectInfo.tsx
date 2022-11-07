@@ -2,7 +2,7 @@ const getProjectInfo = [
   {
     id: "1",
     name: "Pizza Store App",
-    image: "/pizzaapp.PNG",
+    image: "/pizzaapp.png",
     description:
       "A NextJS pizza store app that allows users to order pizza and pay via cash on delivery or PayPal. Includes Admin panel to manage each specific order and view previous orders as well as ability to add, delete, and update a product.",
 
@@ -30,7 +30,7 @@ const getProjectInfo = [
   {
     id: "3",
     name: "YelpCamp App",
-    image: "/yelpcamp1.png",
+    image: "/yelpcamp1.PNG",
     description:
       "A YelpCamp app that allows users to register and login to create, edit, and delete campgrounds as well as review existing campgrounds.",
 
