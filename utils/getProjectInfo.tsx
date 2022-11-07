@@ -14,7 +14,7 @@ const getProjectInfo = [
   {
     id: "2",
     name: "NHL Team Info App",
-    image: "/nhlstatsapp4.PNG",
+    image: "/nhlstatsapp3.PNG",
     description:
       "A NextJS app that allows users to view NHL team stats and player stats. Includes a search bar to search for a specific team and view information about that team. Also includes a search bar to search for a specific player and view information about that team. A user can also see any roster in a specific team's history and see career stats and gamelog for any player.",
 
@@ -30,7 +30,7 @@ const getProjectInfo = [
   {
     id: "3",
     name: "YelpCamp App",
-    image: "/yelpcamp1.PNG",
+    image: "/yelpcamp2.PNG",
     description:
       "A YelpCamp app that allows users to register and login to create, edit, and delete campgrounds as well as review existing campgrounds.",
 
