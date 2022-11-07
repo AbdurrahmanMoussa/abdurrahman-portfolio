@@ -25,7 +25,14 @@ const Hero = (props: Props) => {
           </div>
 
           <Link href="#skills" className={styles.arrow}>
-            <Image src="/down.png" alt="" width={50} height={50}></Image>
+            <Image
+              src="/down.png"
+              alt=""
+              width={50}
+              height={50}
+              priority
+              unoptimized={true}
+            ></Image>
           </Link>
         </div>
       </div>

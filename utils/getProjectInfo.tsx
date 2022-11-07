@@ -2,7 +2,7 @@ const getProjectInfo = [
   {
     id: "1",
     name: "Pizza Store App",
-    image: "/pizzaapp.png",
+    image: "/pizzaapp5.png",
     description:
       "A NextJS pizza store app that allows users to order pizza and pay via cash on delivery or PayPal. Includes Admin panel to manage each specific order and view previous orders as well as ability to add, delete, and update a product.",
 

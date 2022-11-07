@@ -16,11 +16,9 @@ const Projects = (props: Props) => {
     />
   ));
 
-  console.log(project);
-
   return (
     <div className={styles.container}>
-      <h3>Projects</h3>
+      <h3 className={styles.header}>Projects</h3>
       <div className={styles.projectGrid}>{project}</div>
     </div>
   );

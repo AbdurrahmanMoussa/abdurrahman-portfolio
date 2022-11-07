@@ -17,6 +17,8 @@ const SkillItem = ({ skill, image }: Props) => {
         width={100}
         height={100}
         className={styles.imgBackground}
+        priority
+        unoptimized={true}
       ></Image>
     </div>
   );

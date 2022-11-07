@@ -37,6 +37,14 @@
     animation: skillsGridAnimation 3s ease;
     animation-fill-mode: backwards;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @keyframes skillsGridAnimation {

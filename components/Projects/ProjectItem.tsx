@@ -27,6 +27,8 @@ const ProjectItem = ({ name, description, image, links }: Props) => {
             alt={""}
             width={300}
             height={150}
+            priority
+            unoptimized={true}
           />
         </div>
         <div className={styles.links}>{getLinks}</div>

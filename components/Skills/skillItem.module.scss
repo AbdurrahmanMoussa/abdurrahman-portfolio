@@ -5,10 +5,6 @@
   height: 100%;
   padding: 0.5rem;
 
-  .container:nth-child(odd) {
-    border-radius: 0;
-  }
-
   h1 {
     font-size: 17px;
     margin: 10px 0;
@@ -18,5 +14,8 @@
   .imgBackground {
     border-radius: 50%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
