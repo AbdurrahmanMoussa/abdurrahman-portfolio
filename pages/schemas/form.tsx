@@ -9,5 +9,3 @@ export const formSchema = object({
 });
 
 export type FormSchema = TypeOf<typeof formSchema>;
-
-export default formSchema;
