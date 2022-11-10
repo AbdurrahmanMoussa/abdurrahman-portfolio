@@ -12,7 +12,7 @@ import useMessageSubmit from "../../hooks/useMessageSubmit";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { formSchema } from "../../pages/schemas/form";
+import { formSchema } from "../../schemas/form";
 
 type Props = {};
 
