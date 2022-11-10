@@ -1,42 +1,45 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .container {
-  height: calc(100vh - 70px);
+  height: 110vh;
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 2000px;
-  margin: 0 auto;
-  top: 100px;
   z-index: 1;
+  background: $mainCardColor;
 
   @media screen and (max-width: 768px) {
-    .container {
-      margin-left: 0;
-    }
+    height: calc(130vh + 70px);
+  }
+  @media screen and (max-width: 480px) {
+    height: 195vh;
+  }
+
+  @media screen and (max-width: 390px) {
+    height: 210vh;
   }
 
   .header {
     position: relative;
-    max-width: 100px;
-    margin: 40px auto;
-    padding-bottom: 2px;
-    color: white;
-    font-weight: bold;
+    padding: auto;
+    max-width: 120px;
+    margin: 80px 0 40px 0;
     font-size: xx-large;
-    font-family: "Poppins", sans-serif;
-    border-bottom: $secondaryBackgroundColor 5px solid;
+    color: $mainColor;
+    font-weight: bold;
+    border-bottom: $mainColor 5px solid;
   }
 
   .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    transition: duration 3s ease;
-    animation: skillsGridAnimation 3s ease;
-    animation-fill-mode: backwards;
-    margin: 0 auto;
+
+    &:last-child {
+      padding-bottom: 60px;
+    }
 
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
@@ -46,14 +49,38 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+}
+
+.skillsGridAnimated {
+  animation: skillsGridAnimation 1.5s ease-in-out alternate;
+  transition: 0.5s ease-in-out all;
 
   @keyframes skillsGridAnimation {
     0% {
       opacity: 0;
-      padding: 500px 0;
+      transform: translateX(400px);
     }
     100% {
       opacity: 1;
+      transform: translateX(0);
     }
   }
+  @media screen and (max-width: 768px) {
+    @keyframes skillsGridAnimation {
+      0% {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.card {
+  @include flexCenter(column);
+
+  height: 100%;
 }

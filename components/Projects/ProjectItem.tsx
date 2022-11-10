@@ -25,8 +25,8 @@ const ProjectItem = ({ name, description, image, links }: Props) => {
             className={styles.image}
             src={image}
             alt={""}
-            width={300}
-            height={150}
+            width={400}
+            height={220}
             priority
             unoptimized={true}
           />

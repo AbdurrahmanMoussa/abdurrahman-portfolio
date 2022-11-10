@@ -1,25 +1,36 @@
 @import "../../styles/colors";
 
 .cardContainer {
-  margin-top: 70px;
-  width: 300px;
+  max-width: 400px;
+  height: 100%;
   overflow: hidden;
   box-shadow: 0px 0px 15px -15px;
-  background-color: white;
-  transition: 0.5s ease-in;
+  background: $projectCardColor;
+  color: $mainColor;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: black 0 0 15px 0;
+  box-shadow: rgb(7, 7, 7) 0 0 15px 0;
+  margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+    width: 70%;
+  }
+
   &:hover {
     transform: scale(1.1);
-    box-shadow: rgb(139, 195, 255) 0px 0px 10px 0px;
     overflow: hidden;
   }
   .imageContainer {
     width: 100%;
-    height: 150px;
+    height: 220px;
     width: 1000px;
     overflow: hidden;
+
     &:hover {
       .links {
         display: flex;
@@ -29,8 +40,7 @@
         background: red;
       }
       .overlay {
-        opacity: 1;
-        background-color: $secondaryBackgroundColor;
+        background-color: $projectCardColor;
         overflow: hidden;
       }
     }
@@ -49,7 +59,7 @@
       .linkButton {
         font-weight: bold;
         font-size: 15px;
-        background-color: $mainColor;
+        background-color: $headerTextColor;
         border: none;
         cursor: pointer;
         color: $mainBackgroundColor;
@@ -58,13 +68,14 @@
         overflow: none;
 
         &:hover {
-          color: $mainColor;
+          color: $headerTextColor;
           background-color: $mainBackgroundColor;
           overflow: hidden;
         }
       }
     }
   }
+
   .cardContent {
     margin: 1rem;
     margin-top: 0.5rem;
@@ -81,5 +92,26 @@
       margin-bottom: 0.5rem;
       padding: 0.2rem;
     }
+  }
+}
+
+.cardContainerAnimated {
+  animation: portfolioEntryAnimation 1.5s ease-in-out alternate;
+  transition: all 0.5s ease-in-out;
+
+  @keyframes portfolioEntryAnimation {
+    0% {
+      opacity: 0.5;
+      transform: translateY(300px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 830px) {
+    animation: none;
   }
 }

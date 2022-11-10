@@ -1,20 +1,11 @@
 @import "./colors";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic");
 html,
 body {
   height: 100vh;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
-}
-main {
-  height: 100vh;
-  background-color: $mainBackgroundColor;
-  width: 100%;
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
-  background-color: $mainBackgroundColor;
+  font-family: "Roboto Mono", sans-serif;
+  margin: auto;
 }
 
 body::-webkit-scrollbar {

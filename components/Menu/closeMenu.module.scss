@@ -1,6 +1,9 @@
+@import "../../styles/colors";
+
 .list {
   margin-bottom: 15px;
   border: none;
+
   a {
     //inherits from ul (parent)
     font-size: 30px;
@@ -9,5 +12,6 @@
   }
   &:hover {
     font-weight: 500;
+    color: black;
   }
 }

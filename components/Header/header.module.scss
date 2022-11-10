@@ -1,16 +1,19 @@
 @import "../../styles/colors";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Raleway:wght@600&display=swap");
 
 .topbar {
   width: 100%;
   height: 70px;
-  color: white;
+  color: $headerTextColor;
   position: fixed;
   top: 0;
   transition: all 1s ease; //delays color transition for active class
   overflow: hidden;
   box-shadow: #000000 0px 0px 10px 0px;
   z-index: 3;
-  background-color: $mainBackgroundColor;
+  background-color: $mainColor;
+  font-family: Raleway, sans-serif;
+
   .wrapper {
     padding: 10px 30px; //| top/bottom: 10 | left/right: 30|
     display: flex;
@@ -31,9 +34,13 @@
       .itemContainer {
         display: flex;
         align-items: center;
-        margin-left: -500px;
+
         animation: easeItemsIn 3s;
         animation-fill-mode: forwards;
+
+        @media screen and (max-width: 730px) {
+          display: none;
+        }
 
         .icon {
           font-size: 18px;
@@ -43,7 +50,6 @@
         span {
           font-size: 15px;
           font-weight: 500;
-          font-family: "Poppins", sans-serif;
         }
         @keyframes easeItemsIn {
           100% {
@@ -67,6 +73,13 @@
         animation: easeHamburgerIn 3s;
         animation-fill-mode: forwards;
 
+        &:hover {
+          span {
+            background-color: rgb(180, 167, 167);
+            transition: 0.5s ease;
+          }
+        }
+
         @keyframes easeHamburgerIn {
           100% {
             //after 2.5s arrows opacity reaches 0 which creates blinking effect
@@ -77,7 +90,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: $headerTextColor;
           transform-origin: left; //makes lines transform towards left
           transition: all 2s ease; //delays transformation to 2s to complete
         }
@@ -86,7 +99,7 @@
     //if it's active reverse main color and text color of navbar
   }
   &.active {
-    background-color: $secondaryBackgroundColor;
+    background: $secondaryBackgroundColor;
     color: white;
 
     .hamburger {

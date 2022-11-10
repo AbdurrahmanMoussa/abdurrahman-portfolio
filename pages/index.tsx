@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero";
 import Menu from "../components/Menu/Menu";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
+import ContactForm from "../components/Contact/ContactForm";
 import { useState } from "react";
 
 const Home: NextPage = () => {
@@ -31,6 +32,9 @@ const Home: NextPage = () => {
           </section>
           <section id="portfolio">
             <Projects />
+          </section>
+          <section id="contact">
+            <ContactForm />
           </section>
         </div>
       </div>

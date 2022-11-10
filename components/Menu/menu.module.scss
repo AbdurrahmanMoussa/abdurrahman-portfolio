@@ -1,17 +1,15 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins";
 
 .menu {
+  @include flexCenter(column);
   width: 300px;
   height: 100vh;
-  background-color: $secondaryBackgroundColor;
+  background: $secondaryBackgroundColor;
   position: fixed;
   top: 0;
   right: -300px;
   z-index: 2; //setting to 2 ensures the menu will appear under topbar which has z-index of 3
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   transition: all 1s ease;
 
   &.active {

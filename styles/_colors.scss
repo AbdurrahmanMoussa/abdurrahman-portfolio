@@ -1,9 +1,92 @@
 $mainColor: white;
 
-$mainBackgroundColor: rgb(17, 8, 76);
+// $mainBackgroundColor: rgb(116, 114, 114);
 
-$mainHeaderBackgroundColor: rgb(28, 13, 123);
+// $mainBackgroundColor: rgb(45, 45, 46);
 
-$secondaryTextColor: rgb(27, 27, 30);
+$mainBackgroundColor: #fff;
 
-$secondaryBackgroundColor: rgb(129, 124, 181);
+$headerTextColor: #000000;
+
+// $mainBackgroundColor: rgb(37, 21, 61);
+// $secondaryBackgroundColor: linear-gradient(
+//   to bottom,
+//   rgb(129, 124, 181) 13%,
+//   rgb(92, 97, 108) 90%
+// );
+
+// $secondaryBackgroundColor: linear-gradient(
+//   to bottom,
+//   rgb(129, 124, 181) 10%,
+//   rgb(129, 124, 181) 13%,
+//   rgb(129, 124, 181) 10%,
+//   #7e5993 100%
+// );
+
+$secondaryBackgroundColor: linear-gradient(
+  to bottom,
+  rgb(81, 78, 88) 10%,
+  rgb(89, 87, 102) 17%,
+  rgb(89, 87, 108) 20%,
+  #4c4252 70%
+);
+
+$buttonBackGroundColor: rgb(221, 221, 221);
+
+$filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+  contrast(100%);
+
+$mainHeaderBackgroundColor: rgb(36, 35, 38);
+
+$textColor: rgb(255, 255, 255);
+
+$basicSecondaryBackgroundColor: #7e5993;
+
+$neon: rgb(248, 234, 234);
+
+// $neon: hsl(317 100% 54%);
+
+$neon-bg: hsl(323 21% 16%);
+
+$projectCardColor: rgb(54, 62, 78);
+
+$heroCardColor: linear-gradient(
+  to bottom,
+  rgba(44, 44, 44, 1) 20%,
+  rgba(0, 0, 0, 1) 51%,
+  rgba(17, 17, 17, 1) 60%,
+  rgba(43, 43, 43, 1) 76%,
+  rgba(28, 28, 28, 1) 91%,
+  rgba(19, 19, 19, 1) 100%,
+  rgba(76, 76, 76, 1) 0%,
+  rgba(89, 89, 89, 1) 12%,
+  rgba(102, 102, 102, 1) 25%,
+  rgba(71, 71, 71, 1) 39%
+);
+$mainCardColor: linear-gradient(
+  to bottom,
+  rgba(44, 44, 44, 1) 20%,
+  rgba(0, 0, 0, 1) 51%,
+  rgba(17, 17, 17, 1) 60%,
+  rgba(43, 43, 43, 1) 76%,
+  rgba(28, 28, 28, 1) 91%,
+  rgba(19, 19, 19, 1) 100%,
+  rgba(76, 76, 76, 1) 0%,
+  rgba(89, 89, 89, 1) 12%,
+  rgba(102, 102, 102, 1) 25%,
+  rgba(71, 71, 71, 1) 39%
+);
+
+// $mainCardColor: linear-gradient(
+//   to bottom,
+//   rgb(81, 78, 88) 10%,
+//   rgb(89, 87, 102) 17%,
+//   rgb(89, 87, 108) 20%,
+//   #4c4252 70%
+// );
+
+// $skillsCardFilter: ;
+
+// $cardColor: rgb(37, 40, 59);
+
+// $mainBack: rgb(17, 8, 76);
