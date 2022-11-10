@@ -24,6 +24,22 @@
       display: flex;
       align-items: center;
 
+      .mailLink {
+        text-decoration: none;
+        color: $headerTextColor;
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+
+      .githubLink {
+        text-decoration: none;
+        color: $headerTextColor;
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 30px;
+      }
+
       .logo {
         font-size: 40px;
         font-weight: 700;
@@ -31,15 +47,20 @@
         color: inherit; //logo inherits $mainColor from parent class (.topbar)
         margin-right: 40px;
       }
+
       .itemContainer {
         display: flex;
         align-items: center;
-
         animation: easeItemsIn 3s;
         animation-fill-mode: forwards;
 
         @media screen and (max-width: 730px) {
           display: none;
+        }
+
+        &:hover:not(:nth-child(2)) {
+          border-bottom: 4px solid black;
+          padding-bottom: 5px;
         }
 
         .icon {

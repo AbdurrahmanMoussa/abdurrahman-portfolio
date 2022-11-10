@@ -1,6 +1,7 @@
 import React from "react";
-import { Person, Mail } from "@material-ui/icons";
+import { Person, Mail, GitHub } from "@material-ui/icons";
 import styles from "./header.module.scss";
+import Link from "next/link";
 
 type Props = {
   menuOpen: boolean;
@@ -23,10 +24,24 @@ const Header = ({ menuOpen, setMenuOpen }: Props) => {
               <Person className={styles.icon} />
               <span>+1-(613)-897-8878</span>
             </div>
-            <div className={styles.itemContainer}>
-              <Mail className={styles.icon} />
-              <span>abdurrahmanmoussa08@outlook.com</span>
-            </div>
+            <Link
+              className={styles.mailLink}
+              href="mailto:abdurrahmanmoussa08@outlook.com"
+            >
+              <div className={styles.itemContainer}>
+                <Mail className={styles.icon} />
+                <span>abdurrahmanmoussa08@outlook.com</span>
+              </div>
+            </Link>
+            <Link
+              className={styles.githubLink}
+              href="https://github.com/AbdurrahmanMoussa"
+            >
+              <div className={styles.itemContainer}>
+                <GitHub className={styles.icon} />
+                <span>GitHub</span>
+              </div>
+            </Link>
           </div>
           <div className={styles.right}>
             <div
