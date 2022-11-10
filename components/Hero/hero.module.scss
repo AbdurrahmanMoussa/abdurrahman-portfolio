@@ -101,8 +101,8 @@
   animation: circleAnimation 4s ease infinite;
   animation-fill-mode: backwards;
   background: $heroCardColor;
-  animation: cardAnimation 2s ease;
-  transition: 2s ease-in-out all;
+  animation: cardAnimation 3s ease;
+  transition: 3s ease-in-out all;
 
   @keyframes cardAnimation {
     0% {

@@ -52,7 +52,8 @@
         display: flex;
         align-items: center;
         animation: easeItemsIn 3s;
-        animation-fill-mode: forwards;
+        animation-fill-mode: backwards alternate;
+        margin-left: 10px;
 
         @media screen and (max-width: 730px) {
           display: none;
@@ -73,9 +74,15 @@
           font-weight: 500;
         }
         @keyframes easeItemsIn {
+          0% {
+            //after 2.5s arrows opacity reaches 0 which creates blinking effect
+            transform: translateX(-300px);
+          }
+
           100% {
             //after 2.5s arrows opacity reaches 0 which creates blinking effect
-            margin-left: 20px;
+
+            transform: translateX(0);
           }
         }
       }
