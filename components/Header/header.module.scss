@@ -60,7 +60,7 @@
         }
 
         &:hover:not(:nth-child(2)) {
-          border-bottom: 4px solid black;
+          border-bottom: 4px solid;
           padding-bottom: 5px;
         }
 
@@ -129,6 +129,15 @@
   &.active {
     background: $secondaryBackgroundColor;
     color: white;
+
+    .itemContainer {
+      color: white;
+
+      &:hover:not(:nth-child(2)) {
+        border-bottom: 4px solid white;
+        padding-bottom: 5px;
+      }
+    }
 
     .hamburger {
       span {
