@@ -1,13 +1,6 @@
-import React, {
-  ChangeEvent,
-  FormEvent,
-  useState,
-  useRef,
-  useEffect,
-} from "react";
+import React, { useState, useRef } from "react";
 import styles from "./contactForm.module.scss";
 import { ContactMail, Check, Close } from "@material-ui/icons";
-import Card from "../UI/Card";
 import useMessageSubmit from "../../hooks/useMessageSubmit";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
@@ -55,24 +48,24 @@ const ContactForm = ({}: Props) => {
   };
 
   return (
-    <Card>
-      <div className={styles.pageContainer}>
-        <div className={styles.formContainer}>
-          <h1>
+    <div className={styles.pageContainer}>
+      <div className={styles.formContainer}>
+        <header className={styles.formHeader}>
+          <h3>
             <ContactMail className={styles.icon} />
             <span className={styles.header}>Contact</span>
-          </h1>
-          {messageDisplayedOnSubmit ? (
-            <div className={messageDisplayedOnSubmit.className}>
-              {messageDisplayedOnSubmit.className !== styles.error ? (
-                <Check className={styles.check} fontSize={"medium"} />
-              ) : (
-                <Close className={styles.close} />
-              )}
-              {messageDisplayedOnSubmit.text}
-            </div>
-          ) : null}
+          </h3>
+          <p>I would love to hear from you.</p>
+        </header>
+        <div className={styles.contactFormContainer}>
+          <span className={`${styles.circle} ${styles.circle1}`}></span>
+          <span className={`${styles.circle} ${styles.circle2}`}></span>
           <form className={styles.form} onSubmit={handleSubmit(submitForm)}>
+            {messageDisplayedOnSubmit ? (
+              <div className={messageDisplayedOnSubmit.className}>
+                {messageDisplayedOnSubmit.text}
+              </div>
+            ) : null}
             <div className={styles.inputContainer}>
               <label htmlFor="name">Name</label>
               <input
@@ -104,7 +97,11 @@ const ContactForm = ({}: Props) => {
             </div>
             <div className={styles.inputContainer}>
               <label htmlFor="message">Message</label>
-              <textarea id="message" {...register("message")}></textarea>
+              <textarea
+                id="message"
+                placeholder="Enter a message"
+                {...register("message")}
+              ></textarea>
               {errors.message ? (
                 <p className={styles.errorMsg}> {errors.message?.message}</p>
               ) : (
@@ -126,7 +123,7 @@ const ContactForm = ({}: Props) => {
           </form>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 

@@ -94,24 +94,3 @@
     }
   }
 }
-
-.cardContainerAnimated {
-  animation: portfolioEntryAnimation 1.5s ease-in-out alternate;
-  transition: all 0.5s ease-in-out;
-
-  @keyframes portfolioEntryAnimation {
-    0% {
-      opacity: 0.5;
-      transform: translateY(300px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @media screen and (max-width: 830px) {
-    animation: none;
-  }
-}

@@ -5,6 +5,7 @@
   height: 100vh;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   width: 100%;
   background: $mainBackgroundColor;
 

@@ -30,7 +30,7 @@ const Header = ({ menuOpen, setMenuOpen }: Props) => {
             >
               <div className={styles.itemContainer}>
                 <Mail className={styles.icon} />
-                <span>abdurrahmanmoussa08@outlook.com</span>
+                <span>Email</span>
               </div>
             </Link>
             <Link

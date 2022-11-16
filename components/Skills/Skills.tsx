@@ -13,24 +13,22 @@ const Skills = () => {
   ));
   return (
     <div id="skills" className={styles.container}>
-      <Card className={styles.card}>
-        <h3
-          className={`${styles.header} ${
-            displayGridAnimation ? styles.skillsGridAnimated : ""
-          }`}
-        >
-          Skills
-        </h3>
+      <h3
+        className={`${styles.header} ${
+          displayGridAnimation ? styles.skillsGridAnimated : ""
+        }`}
+      >
+        Skills
+      </h3>
 
-        <div
-          className={`${styles.skillsGrid} ${
-            displayGridAnimation ? styles.skillsGridAnimated : ""
-          }`}
-          ref={ref}
-        >
-          {skillsInfo}
-        </div>
-      </Card>
+      <div
+        className={`${styles.skillsGrid} ${
+          displayGridAnimation ? styles.skillsGridAnimated : ""
+        }`}
+        ref={ref}
+      >
+        {skillsInfo}
+      </div>
     </div>
   );
 };

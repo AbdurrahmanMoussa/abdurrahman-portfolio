@@ -2,7 +2,47 @@
 @import "../../styles/mixins";
 
 .container {
-  background: $mainCardColor;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 31, 32);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
+  justify-content: center;
+
+  @media screen and (max-width: 1025px) {
+    min-height: 190vh;
+  }
+
+  @media screen and (max-width: 821px) {
+    min-height: 138vh;
+  }
+  @media screen and (max-width: 768px) {
+    min-height: 158vh;
+  }
+  @media screen and (max-width: 541px) {
+    min-height: 230vh;
+  }
+  @media screen and (max-width: 415px) {
+    min-height: 200vh;
+  }
+  @media screen and (max-width: 394px) {
+    min-height: 210vh;
+  }
+
+  @media screen and (max-width: 376px) {
+    min-height: 240vh;
+  }
+
+  @media screen and (max-width: 361px) {
+    min-height: 250vh;
+  }
+  @media screen and (max-width: 281px) {
+    min-height: 315vh;
+  }
   .header {
     position: relative;
     max-width: 150px;
@@ -37,12 +77,10 @@
 
   @keyframes portfolioEntryAnimation {
     0% {
-      opacity: 0.5;
       transform: translateY(300px);
     }
 
     100% {
-      opacity: 1;
       transform: translateY(0);
     }
   }
