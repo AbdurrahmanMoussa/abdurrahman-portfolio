@@ -9,9 +9,10 @@
   width: 100%;
   overflow: auto;
   overflow-y: scroll;
-  padding-right: 17px;
+
   box-sizing: content-box;
   justify-content: center;
+  padding: 100px 0;
 
   @media screen and (max-width: 1025px) {
     min-height: 190vh;
