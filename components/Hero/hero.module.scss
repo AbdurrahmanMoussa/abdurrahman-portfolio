@@ -17,23 +17,40 @@
       @media screen and (max-width: 480px) {
         width: 80%;
       }
+
       .wrapper {
         margin-left: 50px;
+
+        @media screen and (max-width: 480px) {
+          margin-left: 20%;
+        }
 
         h1 {
           font-size: 60px;
           margin: 10px 0;
           color: darken($textColor, 2%);
+
+          @media screen and (max-width: 480px) {
+            font-size: 40px;
+          }
         }
         h2 {
           color: darken($textColor, 2%);
           font-size: 35px;
+
+          @media screen and (max-width: 480px) {
+            font-size: 25px;
+          }
         }
         h3 {
           font-size: 30px;
           opacity: 0.9;
 
           color: $textColor;
+
+          @media screen and (max-width: 480px) {
+            font-size: 25px;
+          }
         }
 
         p {
@@ -42,6 +59,17 @@
           color: $textColor;
           opacity: 0.8;
           padding-top: 0.5rem;
+
+          span {
+            display: block;
+          }
+
+          @media screen and (max-width: 480px) {
+            span {
+              font-size: 15px;
+              margin-top: 10px;
+            }
+          }
         }
         .buttonContainer {
           flex-direction: row;
@@ -61,6 +89,13 @@
             border-radius: 20px;
             font-size: x-large;
             border: none;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 480px) {
+              font-size: 16px;
+              padding: 13px;
+            }
 
             &:hover {
               background-color: darken($buttonBackGroundColor, 10%);
@@ -79,7 +114,6 @@
               transform: rotate(90deg);
               margin-left: 10px;
               position: relative;
-              top: 5px;
               width: 30px;
               height: 30px;
               @keyframes arrowBlink {

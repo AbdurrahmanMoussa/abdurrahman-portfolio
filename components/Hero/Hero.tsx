@@ -7,10 +7,10 @@ import { init } from "ityped";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const textRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<string | HTMLSpanElement | any>(null);
 
   useEffect(() => {
-    init(textRef.current, {
+    init(textRef.current !== null ? textRef.current : "", {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
@@ -30,9 +30,13 @@ const Hero = (props: Props) => {
                 I am a <span ref={textRef}></span>
               </h3>
               <p className={styles.paragraph}>
-                I specialize in creating incredible digital experiences. <br />{" "}
-                My primary focus is on crafting clean and user-friendly
-                experiences.
+                <span>
+                  I specialize in creating incredible digital experiences.{" "}
+                </span>
+                <span>
+                  My primary focus is on crafting clean and user-friendly
+                  experiences.
+                </span>
               </p>
               <div className={styles.buttonContainer}>
                 <Link href="#portfolio" className={styles.work}>
