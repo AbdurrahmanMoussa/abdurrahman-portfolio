@@ -3,7 +3,7 @@
 
 .pageContainer {
   position: relative;
-  min-height: 105vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   align-items: center;
   overflow: auto;
   background-color: rgb(25, 25, 26);
-  padding-bottom: 100px;
+  padding: 100px 0;
   z-index: 0;
 
   @media screen and (max-width: 913px) {
