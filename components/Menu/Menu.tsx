@@ -14,7 +14,7 @@ const Menu = ({ menuOpen, setMenuOpen }: Props) => {
     <div className={menuStyles}>
       <ul>
         <CloseMenu setMenuOpen={setMenuOpen}>
-          <Link href="#intro">Home</Link>
+          <Link href="#hero">Home</Link>
         </CloseMenu>
         <CloseMenu setMenuOpen={setMenuOpen}>
           <Link href="#portfolio">Portfolio</Link>

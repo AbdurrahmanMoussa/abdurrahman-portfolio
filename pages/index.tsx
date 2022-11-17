@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       <div className={styles.app}>
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div className={styles.sections}>
-          <section id="home">
+          <section id="hero">
             <Hero />
           </section>
           <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
