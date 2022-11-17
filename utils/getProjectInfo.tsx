@@ -17,7 +17,7 @@ const getProjectInfo = [
     image:
       "https://res.cloudinary.com/dydzf1y9j/image/upload/v1668116987/nhlstatsappmain_e3wubu.png",
     description:
-      "A NextJS app that allows users to view NHL team stats and player stats. Includes a search bar to search for a specific team and view information about that team. Also includes a search bar to search for a specific player and view information about that team. A user can also see any roster in a specific team's history and see career stats and gamelog for any player.",
+      "A NextJS app that allows users to view any roster in a specific team's history and see career stats and gamelog for any player.",
 
     link: [
       {

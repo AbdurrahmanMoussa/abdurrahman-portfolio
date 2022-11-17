@@ -10,12 +10,12 @@
 
   .sections section {
     background: $mainBackgroundColor;
-    scroll-snap-align: end;
     width: 100%;
     height: 100vh;
     position: relative;
     transition: 1s ease-in-out all;
     overflow-y: scroll;
+    scroll-snap-align: start;
   }
 }
 

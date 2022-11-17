@@ -18,6 +18,10 @@
       @media screen and (max-width: 480px) {
         font-size: 40px;
       }
+
+      @media screen and (max-width: 4280px) {
+        font-size: 30px;
+      }
     }
     h2 {
       color: darken($textColor, 2%);
@@ -25,6 +29,10 @@
 
       @media screen and (max-width: 480px) {
         font-size: 25px;
+      }
+
+      @media screen and (max-width: 280px) {
+        font-size: 20px;
       }
     }
     h3 {

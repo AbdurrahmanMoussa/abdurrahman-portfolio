@@ -7,7 +7,6 @@
   height: 100%;
   width: 100%;
   overflow-y: scroll;
-  box-sizing: content-box;
 
   &::-webkit-scrollbar {
     display: none;
@@ -31,6 +30,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 
+    @media screen and (min-width: 830px) {
+      transform: translateY(300px);
+    }
+
     @media screen and (max-width: 1220px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
@@ -43,15 +46,19 @@
 
 .cardContainerAnimated {
   animation: portfolioEntryAnimation 1.5s ease-in-out alternate;
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  animation-fill-mode: forwards;
 
   @keyframes portfolioEntryAnimation {
     0% {
+      display: none;
       transform: translateY(300px);
     }
 
     100% {
+      display: grid;
       transform: translateY(0);
+      padding: 0;
     }
   }
 

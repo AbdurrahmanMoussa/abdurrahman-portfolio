@@ -19,14 +19,16 @@ const Projects = () => {
   ));
 
   return (
-    <div
-      className={`${styles.container} ${
-        isVisible ? styles.cardContainerAnimated : ""
-      }`}
-      ref={ref}
-    >
+    <div className={styles.container}>
       <h3 className={styles.header}>Projects</h3>
-      <div className={styles.projectGrid}>{project}</div>
+      <div
+        className={`${styles.projectGrid} ${
+          isVisible ? styles.cardContainerAnimated : ""
+        }`}
+        ref={ref}
+      >
+        {project}
+      </div>
     </div>
   );
 };

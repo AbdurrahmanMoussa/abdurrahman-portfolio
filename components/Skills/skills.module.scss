@@ -9,38 +9,39 @@
   z-index: 1;
   background-color: rgb(28, 29, 30);
   overflow: scroll;
-  padding-top: 80px;
+  padding-top: 60px;
+  scroll-snap-type: none;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
   @media screen and (max-width: 1025px) {
-    height: 180vh;
+    padding-top: 250px;
   }
-  @media screen and (max-width: 912px) {
-    justify-content: flex-start;
-    height: 100vh;
-  }
-  @media screen and (max-width: 820px) {
-    height: 100vh;
-  }
+  // @media screen and (max-width: 912px) {
+  //   justify-content: flex-start;
+  //   height: 100vh;
+  // }
+  // @media screen and (max-width: 820px) {
+  //   height: 100vh;
+  // }
 
-  @media screen and (max-width: 768px) {
-    height: 120vh;
-  }
+  // @media screen and (max-width: 768px) {
+  //   height: 120vh;
+  // }
 
-  @media screen and (max-width: 540px) {
-    height: 220vh;
-  }
+  // @media screen and (max-width: 540px) {
+  //   height: 220vh;
+  // }
 
   // @media screen and (max-width: 480px) {
   //   height: 115vh;
   // }
 
-  // @media screen and (max-width: 415px) {
-  //   height: 190vh;
-  // }
+  @media screen and (max-width: 415px) {
+    height: 130vh;
+  }
 
   // @media screen and (max-width: 394px) {
   //   padding-top: 0;
@@ -72,7 +73,7 @@
   .skillsGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 120px;
+    grid-gap: 100px;
     margin: 0 auto;
     padding-top: 70px;
 
@@ -84,7 +85,7 @@
       grid-template-columns: repeat(5, 1fr);
     }
 
-    @media screen and (max-width: 1015px) {
+    @media screen and (max-width: 1025px) {
       grid-template-columns: repeat(4, 1fr);
     }
 
