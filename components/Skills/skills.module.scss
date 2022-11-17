@@ -9,7 +9,7 @@
   z-index: 1;
   background-color: rgb(28, 29, 30);
   overflow: scroll;
-  padding-top: 60px;
+  padding-top: 80px;
   scroll-snap-type: none;
 
   &::-webkit-scrollbar {
@@ -75,13 +75,8 @@
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 100px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 40px;
 
-    @media screen and (max-width: 500px) {
-      &:last-child {
-        padding-bottom: 200px;
-      }
-    }
     &:last-child {
       padding-bottom: 60px;
     }

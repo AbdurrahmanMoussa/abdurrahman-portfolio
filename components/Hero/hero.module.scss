@@ -130,28 +130,11 @@
 
 .card {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(column);
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1;
-  animation: circleAnimation 4s ease infinite;
-  animation-fill-mode: backwards;
-  background: $heroCardColor;
-  animation: cardAnimation 3s ease;
   transition: 3s ease-in-out all;
-
-  @keyframes cardAnimation {
-    0% {
-      transform: translateX(300px);
-      transform: translateY(300px);
-    }
-    100% {
-      transform: translateX(0);
-      transform: translateY(0);
-    }
-  }
+  background: $mainCardColor;
 }
