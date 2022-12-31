@@ -9,8 +9,9 @@
   z-index: 1;
   background-color: rgb(28, 29, 30);
   overflow: scroll;
-  padding-top: 80px;
+  padding-top: 30px;
   scroll-snap-type: none;
+  scroll-snap-align: start;
 
   &::-webkit-scrollbar {
     display: none;
@@ -19,47 +20,10 @@
   @media screen and (max-width: 1025px) {
     padding-top: 250px;
   }
-  // @media screen and (max-width: 912px) {
-  //   justify-content: flex-start;
-  //   height: 100vh;
-  // }
-  // @media screen and (max-width: 820px) {
-  //   height: 100vh;
-  // }
-
-  // @media screen and (max-width: 768px) {
-  //   height: 120vh;
-  // }
-
-  // @media screen and (max-width: 540px) {
-  //   height: 220vh;
-  // }
-
-  // @media screen and (max-width: 480px) {
-  //   height: 115vh;
-  // }
 
   @media screen and (max-width: 415px) {
     height: 130vh;
   }
-
-  // @media screen and (max-width: 394px) {
-  //   padding-top: 0;
-  //   height: 205vh;
-  // }
-
-  // @media screen and (max-width: 376px) {
-  //   padding-top: 170px;
-  //   height: 200vh;
-  // }
-
-  // @media screen and (max-width: 360px) {
-  //   padding-top: 100px;
-  // }
-
-  // @media screen and (max-width: 281px) {
-  //   height: 240vh;
-  // }
 
   .header {
     max-width: 120px;

@@ -3,14 +3,17 @@
 
 .pageContainer {
   position: relative;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   @include flexCenter(column);
   overflow: scroll;
   background-color: rgb(25, 25, 26);
   padding-top: 80px;
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
   z-index: 0;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: center;
 
   &::-webkit-scrollbar {
     display: none;
@@ -19,7 +22,7 @@
   .formContainer {
     width: 100%;
     max-width: 620px;
-    max-height: 700px;
+    max-height: 650px;
     background-color: $mainColor;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;

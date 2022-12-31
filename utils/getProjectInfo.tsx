@@ -10,6 +10,15 @@ const getProjectInfo = [
       { name: "Code", url: "https://github.com/AbdurrahmanMoussa/Pizza-Store" },
       { name: "Demo", url: "https://pizza-store-seven-self.vercel.app/" },
     ],
+    stack: [
+      "NextJS",
+      "JavaScript",
+      "Redux Toolkit",
+      "MongoDB",
+      "CSS",
+      "PayPal",
+      "Vercel",
+    ],
   },
   {
     id: "2",
@@ -26,6 +35,7 @@ const getProjectInfo = [
       },
       { name: "Demo", url: "https://nhl-stats-app.vercel.app/" },
     ],
+    stack: ["NextJS", "JavaScript", "CSS", "Vercel"],
   },
 
   {
@@ -39,6 +49,16 @@ const getProjectInfo = [
     link: [
       { name: "Code", url: "https://github.com/AbdurrahmanMoussa/YelpCamp" },
       { name: "Demo", url: "https://pure-ridge-72894.herokuapp.com" },
+    ],
+    stack: [
+      "JavaScript",
+      "Express",
+      "Node",
+      "MongoDB",
+      "EJS",
+      "CSS",
+      "MapBox",
+      "PassportJS",
     ],
   },
 ];
