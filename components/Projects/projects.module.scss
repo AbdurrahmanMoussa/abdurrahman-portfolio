@@ -9,7 +9,10 @@
   overflow-y: scroll;
   scroll-snap-type: mandatory;
   scroll-snap-align: center;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &::-webkit-scrollbar {
     display: none;
@@ -17,9 +20,10 @@
 
   .header {
     position: relative;
+
     max-width: 150px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 50px;
     padding-bottom: 2px;
     color: $mainColor;
@@ -31,7 +35,8 @@
   .projectGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 100px;
+    margin: 0 auto;
 
     @media screen and (min-width: 830px) {
       transform: translateY(300px);
@@ -55,13 +60,12 @@
   @keyframes portfolioEntryAnimation {
     0% {
       display: none;
-      transform: translateY(300px);
+      transform: translateY(200px);
     }
 
     100% {
       display: grid;
       transform: translateY(0);
-      padding: 0;
     }
   }
 

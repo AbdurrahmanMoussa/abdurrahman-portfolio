@@ -40,15 +40,15 @@ const getProjectInfo = [
 
   {
     id: "3",
-    name: "YelpCamp App",
+    name: "Trading App",
     image:
-      "https://res.cloudinary.com/dydzf1y9j/image/upload/v1668116966/yelpcampMain_xl6qkb.png",
+      "https://res.cloudinary.com/dydzf1y9j/image/upload/v1678833950/tradersappscreenshot_q92qfc.png",
     description:
-      "A YelpCamp app that allows users to register and login to create, edit, and delete campgrounds as well as review existing campgrounds.",
+      "A Trading app that allows users to register and login to advertise products that they are selling/trading and allows other users to add a review of their experience.",
 
     link: [
-      { name: "Code", url: "https://github.com/AbdurrahmanMoussa/YelpCamp" },
-      { name: "Demo", url: "https://pure-ridge-72894.herokuapp.com" },
+      { name: "Code", url: "https://github.com/AbdurrahmanMoussa/trader-app" },
+      { name: "Demo", url: "https://trader-app-one.vercel.app/" },
     ],
     stack: [
       "JavaScript",
@@ -56,9 +56,8 @@ const getProjectInfo = [
       "Node",
       "MongoDB",
       "EJS",
+      "BootStrap",
       "CSS",
-      "MapBox",
-      "PassportJS",
     ],
   },
 ];
